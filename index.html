@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  </head>
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+<body>
+    <!-- navigation -->
+    <div class="s3_navigation">
+        <div class="topnav">
+            <img class="logo" src="images/n1.png">
+            <a href="#contact">Contact</a> <a href="#about">About</a><a href="#bottom-container">Register</a>
+            <a class="active" href="#">Home</a>
+        </div>
+    </div>
+      <!-- Main -->
+      <div class="main">
+        <h1>EOTO</h1>
+        <h2>Each One Teach One</h2>
+    </div>
+    <!-- Slides -->
+    <div class="slides">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/s1.jpg" height="300" width="100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/s2.png" height="300" width="100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/s3.png" height="300" width="100%">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+  
+    <!-- bottom-container -->
+    <div id="bottom-container">
+        <div class="bottom-container1">
+            <h1>If you are a Student and Willing to Learn</h1>
+            <a href="#" class="button1" id="button1">Register Here</a>
+        </div>
+
+        <br>
+        <div class="bottom-container2">
+            <h1>If you are a Student and Willing to Teach</h1>
+            <a href="#" class="button2" id="button2">Register Here</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- About -->
+    <div class="abt-s" id="about">
+        <div class="container">
+            <h1 class="abt1">About</h1>
+            <p class="abtp">
+                Each One Teach One is a simple technique for imparting small pieces of understanding to a group—one student at a time. Each student confronts new information, learns it, and then is empowered to teach it to each other student. It allows the student to
+                understand better and provides the learner with rare one-on-one attention and lets students select “lessons/Modules” appropriate to particular student learning styles, energy levels, and personalities. As a teaching method, it can be used
+                with almost any subject. This helps the individual to enhance the understanding of self and the subject, as unofficially proven, it is alwaysthat best friend who becomes the best teacher by teaching topics in a way that one can remember
+                in the last minute, EOTO would be taking this concept much farther by building the system for it, with a community that would work for the betterment of the concept and the idea, includes analysis, maintenance, support, improvement, etc
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <!-- Contact -->
+    <div class="footer" id="contact">
+        <div class="container">
+
+            <img src="images/shape.png" class="square" alt="" />
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Our team is happy to answer your questions.Fill out the form and we'll be in touch as soon as possible
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <img src="images/location.png" class="icon" alt="" />
+                            <p>#63,7th cross bankcolony BANGALORE 560070</p>
+                        </div>
+                        <div class="information">
+                            <img src="images/email.png" class="icon" alt="" />
+                            <p>abc09@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="images/phone.png" class="icon" alt="" />
+                            <p>123-456-789</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="thank/thank.html" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" required/>
+                            <label for="">Fullname</label>
+                            <span>Fullname</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" required/>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" name="phone" class="input" required/>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="c.js"></script>
+    </div>
+    <!-- Willing to Learn Registration Form -->
+    <div class="popup" id="popup">
+        <div class="container-b1"> 
+            <img src="images/cls ph.jpg" alt="Close" class="close">
+            <div class="title">Learner<br>Registration</div>
+            <div class="title-sub">Its Quick and Easy</div>
+            <div class="content-b1">
+              <form action="thank/thank.html">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your Email-id" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Enter your Phone number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" placeholder="Enter your Date of birth" required>
+                  </div> 
+                   <div class="input-box">
+                    <span class="details">College</span>
+                    <input type="text" placeholder="Enter your College name" required>
+                  </div>    
+                  <div class="input-box">
+                    <span class="details">Course</span>
+                    <input type="text" placeholder="Enter your Course" required>
+                  </div>    
+           
+                  <div class="input-box">
+                    <span class="details">USN</span>
+                    <input type="text" placeholder="Enter your USN" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Subjects Insterested to Learn</span>
+                    <input type="text" placeholder="eg-Kannada,English,Python,Java,etc" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your city" required>
+                  </div>
+             
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" required>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button class="btn1" type="submit"><b>Register</b></button>
+              </div> 
+        
+            </form>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("button1").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "flex";
+        })
+
+        document.querySelector(".close").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "none";
+        })
+       
+    </script>
+    <!-- Willing to Teach Registration Form -->
+    <div class="popup1">
+        <div class="container-b2"> 
+            <img src="images/cls ph.jpg" alt="Close" class="close1">
+            <div class="title">Registration</div>
+            <div class="title-sub">Its Quick and Easy</div>
+            <div class="content-b2">
+              <form action="thank/thank.html">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your Email-id" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" placeholder="Enter your Phone number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" placeholder="Enter your Date of birth" required>
+                  </div> 
+                   <div class="input-box">
+                    <span class="details">College</span>
+                    <input type="text" placeholder="Enter your College name" required>
+                  </div>    
+                  <div class="input-box">
+                    <span class="details">Qualification</span>
+                    <input type="text" placeholder="Enter your Qualification" required>
+                  </div>    
+                  <div class="input-box">
+                    <span class="details">USN</span>
+                    <input type="text" placeholder="Enter your USN" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Subjects Interested to Teach</span>
+                    <input type="text" placeholder="eg.Kannada,English,Java,Python,etc" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Enter your City" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" required>
+                  </div>
+                </div>
+                <div class="btn-group">
+                <button class="btn1" type="submit"><b>Register</b></button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+   
+    <script>
+        document.getElementById("button2").addEventListener("click", function() {
+            document.querySelector(".popup1").style.display = "flex";
+        })
+        document.querySelector(".close1").addEventListener("click", function() {
+            document.querySelector(".popup1").style.display = "none";
+        })
+    </script>
+    <div class="whatsapp">
+<a href="https://api.whatsapp.com/send?phone=91123456789&text=Hello this is the starting message" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+<p>Chat With Us</p>
+</a>
+    </div>
+</body>
+
+</html>
